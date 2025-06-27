@@ -35,6 +35,9 @@ export default function App() {
           console.log(Platform.OS, 'toggle pressed');
           setLogs(prevLogs => [...prevLogs, "toggle pressed"]);
           setIsTrue(!isTrue);
+
+          // uncomment to temp fix issue
+          // riveRef?.play();
         }} />
         <Text>{isTrue ? 'True' : 'False'}</Text>
       </View>
