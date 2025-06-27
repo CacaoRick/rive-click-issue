@@ -1,11 +1,11 @@
-import {View, ScrollView, Text } from 'react-native';
-import { useState } from 'react';
+import { View, ScrollView, Text } from 'react-native';
+import React, { useState } from 'react';
 import Rive from 'rive-react-native';
 
 const RiveFile = require('./click.riv')
 
 export default function App() {
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState<string[]>([]);
   return (
     <View style={{ flex: 1 }}>
       <Rive
